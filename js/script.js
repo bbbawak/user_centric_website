@@ -6,6 +6,7 @@
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('site-nav');
   const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
 
   const applyPreferences = (theme, font) => {
     body.classList.remove('theme-dark', 'theme-high-contrast', 'font-small', 'font-medium', 'font-large');
@@ -64,11 +65,13 @@
     contactForm.addEventListener('submit', (event) => {
       if (!contactForm.checkValidity()) {
         event.preventDefault();
+        if (formStatus) formStatus.textContent = 'Please complete the required fields before submitting.';
         contactForm.reportValidity();
         return;
       }
 
       event.preventDefault();
+      if (formStatus) formStatus.textContent = 'Sending your message...';
       window.location.href = 'success.html';
     });
   }

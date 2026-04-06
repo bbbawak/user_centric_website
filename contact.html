@@ -61,6 +61,7 @@
 
         <label for="phone">Phone Number</label>
         <input id="phone" name="phone" type="tel" pattern="[0-9\-\s\(\)]{10,}" required>
+        <p class="form-note">Use numbers only, or include dashes/spaces.</p>
 
         <label for="subject">Subject</label>
         <input id="subject" name="subject" type="text" required>
@@ -69,6 +70,7 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <button class="btn" type="submit">Send Message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
       </form>
 
       <section class="card">
