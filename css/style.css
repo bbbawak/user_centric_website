@@ -180,6 +180,12 @@ main {
   background: #fff;
 }
 
+.section-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0.2rem 0 0.8rem;
+}
+
 .btn {
   display: inline-block;
   border: 1px solid transparent;
