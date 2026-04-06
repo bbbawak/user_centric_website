@@ -1,0 +1,6 @@
+Create website
+Host website
+Create Usability Test script
+Run Usability Test script
+Prepare usability test results
+Create repository in github for website
