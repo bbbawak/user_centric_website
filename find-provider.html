@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Services Carrollton | Find a Provider</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Healthcare Services Carrollton"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="find-provider.html">Find a Provider</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="accessibility.html">Accessibility</a>
+      </nav>
+      <button id="settings-button" class="settings-button" aria-controls="accessibility-panel" aria-expanded="false" title="Accessibility settings">⚙</button>
+    </div>
+  </header>
+
+  <aside id="accessibility-panel" class="accessibility-panel" aria-label="Accessibility settings" hidden>
+    <h2>Accessibility Settings</h2>
+    <div class="panel-group">
+      <p class="panel-label">Color scheme</p>
+      <div class="button-row">
+        <button type="button" data-theme="default">Default</button>
+        <button type="button" data-theme="dark">Dark</button>
+        <button type="button" data-theme="high-contrast">High Contrast</button>
+      </div>
+    </div>
+    <div class="panel-group">
+      <p class="panel-label">Font size</p>
+      <div class="button-row">
+        <button type="button" data-font="small">A-</button>
+        <button type="button" data-font="medium">A</button>
+        <button type="button" data-font="large">A+</button>
+      </div>
+    </div>
+    <button type="button" id="reset-preferences">Reset to defaults</button>
+  </aside>
+
+  <main id="main-content" class="container">
+    <h1>Find a Provider</h1>
+    <p>Search local providers and compare options that match your care needs.</p>
+
+    <form class="search-form" aria-label="Provider search">
+      <label for="provider-search">Search by provider name or specialty</label>
+      <input id="provider-search" type="search" placeholder="Search specialty, like cardiologist">
+
+      <div class="grid-3">
+        <div>
+          <label for="specialty">Specialty</label>
+          <select id="specialty">
+            <option>All specialties</option>
+            <option>Cardiology</option>
+            <option>Pediatrics</option>
+            <option>Family Medicine</option>
+          </select>
+        </div>
+        <div>
+          <label for="insurance">Insurance</label>
+          <select id="insurance">
+            <option>All insurance plans</option>
+            <option>Blue Cross</option>
+            <option>Aetna</option>
+            <option>UnitedHealthcare</option>
+          </select>
+        </div>
+        <div>
+          <label for="distance">Distance</label>
+          <select id="distance">
+            <option>Any distance</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 25 miles</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="btn">Apply Filters</button>
+    </form>
+
+    <section class="grid-2" aria-label="Provider results">
+      <article class="card provider-card">
+        <h2>Dr. Emily Carter</h2>
+        <p><strong>Specialty:</strong> Cardiology</p>
+        <p><strong>Insurance:</strong> Blue Cross, Aetna</p>
+        <p><strong>Rating:</strong> 4.8/5</p>
+        <p><span class="status accepting">Accepting Patients</span></p>
+        <div class="button-row">
+          <a class="btn btn-secondary" href="#">View Profile</a>
+          <a class="btn btn-secondary" href="#">Contact</a>
+          <a class="btn" href="#">Book</a>
+        </div>
+      </article>
+
+      <article class="card provider-card">
+        <h2>Dr. Michael Nguyen</h2>
+        <p><strong>Specialty:</strong> Family Medicine</p>
+        <p><strong>Insurance:</strong> UnitedHealthcare</p>
+        <p><strong>Rating:</strong> 4.6/5</p>
+        <p><span class="status full">Not Accepting New Patients</span></p>
+        <div class="button-row">
+          <a class="btn btn-secondary" href="#">View Profile</a>
+          <a class="btn btn-secondary" href="#">Contact</a>
+          <a class="btn" href="#">Book</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Healthcare Services Carrollton</h2>
+        <p>Your local directory for healthcare information and support.</p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="find-provider.html">Find a Provider</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Phone: (972) 555-0110</p>
+        <p>Email: support@carrolltonhealth.example</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

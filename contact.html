@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Services Carrollton | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Healthcare Services Carrollton"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="find-provider.html">Find a Provider</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="accessibility.html">Accessibility</a>
+      </nav>
+      <button id="settings-button" class="settings-button" aria-controls="accessibility-panel" aria-expanded="false" title="Accessibility settings">⚙</button>
+    </div>
+  </header>
+
+  <aside id="accessibility-panel" class="accessibility-panel" aria-label="Accessibility settings" hidden>
+    <h2>Accessibility Settings</h2>
+    <div class="panel-group">
+      <p class="panel-label">Color scheme</p>
+      <div class="button-row">
+        <button type="button" data-theme="default">Default</button>
+        <button type="button" data-theme="dark">Dark</button>
+        <button type="button" data-theme="high-contrast">High Contrast</button>
+      </div>
+    </div>
+    <div class="panel-group">
+      <p class="panel-label">Font size</p>
+      <div class="button-row">
+        <button type="button" data-font="small">A-</button>
+        <button type="button" data-font="medium">A</button>
+        <button type="button" data-font="large">A+</button>
+      </div>
+    </div>
+    <button type="button" id="reset-preferences">Reset to defaults</button>
+  </aside>
+
+  <main id="main-content" class="container">
+    <h1>Contact Us</h1>
+    <p>Send us a message and we will follow up with you.</p>
+
+    <div class="grid-2">
+      <form id="contact-form" class="card" novalidate>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="full-name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9\-\s\(\)]{10,}" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <section class="card">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> (972) 555-0110</p>
+        <p><strong>Email:</strong> support@carrolltonhealth.example</p>
+        <p><strong>Address:</strong> 100 Carrollton Health Plaza, Carrollton, TX</p>
+        <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Healthcare Services Carrollton</h2>
+        <p>Your local directory for healthcare information and support.</p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="find-provider.html">Find a Provider</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Phone: (972) 555-0110</p>
+        <p>Email: support@carrolltonhealth.example</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
