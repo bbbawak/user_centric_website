@@ -36,6 +36,18 @@ Thank you for participating. I am testing the website design, not you. Please co
 | 9 |  |  |  |  |  |
 | 10 |  |  |  |  |  |
 
+## Difficulty Rating (1-5)
+- Task 1:
+- Task 2:
+- Task 3:
+- Task 4:
+- Task 5:
+- Task 6:
+- Task 7:
+- Task 8:
+- Task 9:
+- Task 10:
+
 ## Closing Questions
 1. What part of the website felt easiest to use?
 2. What was confusing or difficult?
