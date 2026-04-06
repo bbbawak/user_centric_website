@@ -31,3 +31,11 @@ python3 -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
+
+## Submission Checklist
+
+- Trello board created with all required cards
+- GitHub repo link added to report
+- Hosted URL verified and accessible
+- Usability test completed with task notes
+- Screenshots captured and included in final PDF
