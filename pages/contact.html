@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthcare Services Carrollton | FAQ</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <title>Healthcare Services Carrollton | Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Healthcare Services Carrollton"></a>
+      <a class="logo" href="index.html"><img src="../images/logo.svg" alt="Healthcare Services Carrollton"></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="find-provider.html">Find a Provider</a>
         <a href="emergency.html">Emergency</a>
         <a href="resources.html">Resources</a>
-        <a class="active" href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a class="active" href="contact.html">Contact</a>
         <a href="accessibility.html">Accessibility</a>
       </nav>
       <button id="settings-button" class="settings-button" aria-controls="accessibility-panel" aria-expanded="false" title="Accessibility settings">⚙</button>
@@ -48,30 +48,39 @@
   </aside>
 
   <main id="main-content" class="container">
-    <h1>Frequently Asked Questions</h1>
+    <h1>Contact Us</h1>
+    <p>Send us a message and we will follow up with you.</p>
 
-    <section class="faq-list">
-      <article class="card">
-        <h2>How do I find a provider?</h2>
-        <p>Open the Find a Provider page and use the search bar and filters for specialty, insurance, and distance.</p>
-      </article>
-      <article class="card">
-        <h2>How do I book an appointment?</h2>
-        <p>Use the Book button on a provider card. In this class project, booking actions are for navigation and demonstration.</p>
-      </article>
-      <article class="card">
-        <h2>What insurance is accepted?</h2>
-        <p>Each provider card lists sample accepted insurance plans.</p>
-      </article>
-      <article class="card">
-        <h2>When should I call 911?</h2>
-        <p>Call 911 for life-threatening symptoms such as severe chest pain, breathing problems, or major injuries.</p>
-      </article>
-      <article class="card">
-        <h2>How can I contact support?</h2>
-        <p>Visit the Contact page and submit the message form.</p>
-      </article>
-    </section>
+    <div class="grid-2">
+      <form id="contact-form" class="card" novalidate>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="full-name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9\-\s\(\)]{10,}" required>
+        <p class="form-note">Use numbers only, or include dashes/spaces.</p>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <section class="card">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> (972) 555-0110</p>
+        <p><strong>Email:</strong> support@carrolltonhealth.example</p>
+        <p><strong>Address:</strong> 100 Carrollton Health Plaza, Carrollton, TX</p>
+        <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">

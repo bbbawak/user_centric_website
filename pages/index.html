@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthcare Services Carrollton | Accessibility</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <title>Healthcare Services Carrollton | Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Healthcare Services Carrollton"></a>
+      <a class="logo" href="index.html"><img src="../images/logo.svg" alt="Healthcare Services Carrollton"></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="find-provider.html">Find a Provider</a>
         <a href="emergency.html">Emergency</a>
         <a href="resources.html">Resources</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
-        <a class="active" href="accessibility.html">Accessibility</a>
+        <a href="accessibility.html">Accessibility</a>
       </nav>
       <button id="settings-button" class="settings-button" aria-controls="accessibility-panel" aria-expanded="false" title="Accessibility settings">⚙</button>
     </div>
@@ -47,29 +48,59 @@
     <button type="button" id="reset-preferences">Reset to defaults</button>
   </aside>
 
-  <main id="main-content" class="container">
-    <h1>Accessibility</h1>
-    <img class="section-icon" src="images/accessibility-icon.svg" alt="Accessibility support icon">
-
-    <section class="card">
-      <h2>Accessibility Statement</h2>
-      <p>Healthcare Services Carrollton is committed to a simple and inclusive experience that aligns with WCAG, ADA, and Section 508 principles.</p>
-      <p>We provide readable typography, keyboard-friendly navigation, contrast-aware themes, and adjustable text sizing controls.</p>
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <h1>Find the right healthcare services in Carrollton</h1>
+        <p>Navigate providers, emergency support, community resources, and accessibility tools in one place.</p>
+        <div class="hero-actions">
+          <a class="btn" href="find-provider.html">Search Providers</a>
+          <a class="btn btn-secondary" href="emergency.html">Emergency Help</a>
+        </div>
+        <img class="hero-image" src="../images/hero-healthcare.svg" alt="Healthcare support illustration">
+      </div>
     </section>
 
-    <section class="grid-3">
+    <section class="container grid-3">
       <article class="card">
-        <h2>Color Schemes</h2>
-        <p>Choose default, dark, or high-contrast themes from the settings button in the header.</p>
+        <h2>Find a Provider</h2>
+        <p>Search doctors by specialty, insurance, and distance from your location.</p>
+        <a href="find-provider.html">Go to provider directory</a>
       </article>
       <article class="card">
-        <h2>Font Size Options</h2>
-        <p>Select A-, A, or A+ to adjust readability based on your preference.</p>
+        <h2>Emergency Services</h2>
+        <p>Know when to call 911 and where to find urgent and emergency care near you.</p>
+        <a href="emergency.html">View emergency guidance</a>
       </article>
       <article class="card">
-        <h2>Reset Controls</h2>
-        <p>Use Reset to defaults to quickly return to the standard view.</p>
+        <h2>Accessibility First</h2>
+        <p>Use font and color options designed to support different access needs.</p>
+        <a href="accessibility.html">Open accessibility page</a>
       </article>
+    </section>
+
+    <section class="container card quick-start">
+      <h2>Start Here</h2>
+      <p>Use these quick links for the most common tasks on this site.</p>
+      <div class="button-row">
+        <a class="btn btn-secondary" href="find-provider.html">Find an available provider</a>
+        <a class="btn btn-secondary" href="emergency.html">Check emergency guidance</a>
+        <a class="btn btn-secondary" href="contact.html">Send a support message</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Popular community resources</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Vaccination Clinics</h3>
+          <p>Browse local vaccination locations and schedules.</p>
+        </article>
+        <article class="card">
+          <h3>Free Screenings</h3>
+          <p>Learn where free blood pressure and diabetes screenings are available.</p>
+        </article>
+      </div>
     </section>
   </main>
 
