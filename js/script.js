@@ -61,6 +61,28 @@
     });
   }
 
+  const langButtons = document.querySelectorAll('.lang-switch__btn');
+  const applyLang = (code) => {
+    const safe = code === 'fr' || code === 'es' ? code : 'en';
+    document.documentElement.lang = safe;
+    localStorage.setItem('lang', safe);
+    langButtons.forEach((btn) => {
+      const on = btn.getAttribute('data-lang') === safe;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', String(on));
+    });
+  };
+
+  if (langButtons.length) {
+    applyLang(localStorage.getItem('lang') || 'en');
+    langButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        if (lang) applyLang(lang);
+      });
+    });
+  }
+
   if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
       if (!contactForm.checkValidity()) {
