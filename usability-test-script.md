@@ -1,13 +1,13 @@
 # Usability Test Script - Healthcare Services Carrollton
 
 ## Session Information
-- Tester name:
-- Participant name:
-- Date:
-- Start time:
-- End time:
+* Tester name:
+* Participant name:
+* Date:
+* Start time:
+* End time:
 
-## Opening Script
+## Opening Script for users
 Thank you for participating. I am testing the website design, not you. Please complete each task and say out loud what you are thinking.
 
 ## Tasks (Top 10)
@@ -36,17 +36,17 @@ Thank you for participating. I am testing the website design, not you. Please co
 | 9 |  |  |  |  |  |
 | 10 |  |  |  |  |  |
 
-## Difficulty Rating (1-5)
-- Task 1:
-- Task 2:
-- Task 3:
-- Task 4:
-- Task 5:
-- Task 6:
-- Task 7:
-- Task 8:
-- Task 9:
-- Task 10:
+## Difficulty Rating (1 to 5)
+* Task 1:
+* Task 2:
+* Task 3:
+* Task 4:
+* Task 5:
+* Task 6:
+* Task 7:
+* Task 8:
+* Task 9:
+* Task 10:
 
 ## Closing Questions
 1. What part of the website felt easiest to use?
