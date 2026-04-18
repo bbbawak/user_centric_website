@@ -296,6 +296,20 @@ textarea {
 .faq-list {
   display: grid;
   gap: 0.9rem;
+  grid-template-columns: 1fr;
+}
+
+/* Show several Q&As at once on larger screens (three across on desktop). */
+@media (min-width: 640px) {
+  .faq-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .quick-start {
