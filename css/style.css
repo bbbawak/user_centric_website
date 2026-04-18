@@ -158,6 +158,10 @@ a {
   border-radius: 8px;
   padding: 0.35rem 0.55rem;
   cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--text);
 }
 
 .accessibility-panel {
