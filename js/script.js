@@ -9,17 +9,21 @@
   const formStatus = document.getElementById('form-status');
 
   const applyPreferences = (theme, font) => {
-    body.classList.remove('theme-dark', 'theme-high-contrast', 'font-small', 'font-medium', 'font-large');
+    body.classList.remove('theme-dark', 'themehighcontrast', 'font-small', 'font-medium', 'font-large');
 
     if (theme === 'dark') body.classList.add('theme-dark');
-    if (theme === 'high-contrast') body.classList.add('theme-high-contrast');
+    if (theme === 'highcontrast') body.classList.add('themehighcontrast');
 
     if (font === 'small') body.classList.add('font-small');
     if (font === 'large') body.classList.add('font-large');
     if (!font || font === 'medium') body.classList.add('font-medium');
   };
 
-  const storedTheme = localStorage.getItem('theme') || 'default';
+  let storedTheme = localStorage.getItem('theme') || 'default';
+  if (storedTheme === 'high-contrast') {
+    storedTheme = 'highcontrast';
+    localStorage.setItem('theme', storedTheme);
+  }
   const storedFont = localStorage.getItem('font') || 'medium';
   applyPreferences(storedTheme, storedFont);
 
